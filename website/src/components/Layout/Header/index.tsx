@@ -50,7 +50,7 @@ const Header: React.FC = () => {
       <nav
         className={`container mx-auto max-w-8xl flex items-center justify-between py-4 duration-300 ${
           sticky
-            ? "shadow-lg bg-white dark:bg-dark rounded-full top-5 px-4 "
+            ? "shadow-lg bg-[#FF6B35] dark:bg-dark rounded-full top-5 px-4 "
             : "shadow-none top-0"
         }`}
       >
@@ -58,9 +58,9 @@ const Header: React.FC = () => {
           <div>
             <Link href="/">
               <Image
-                src={"/images/header/dark-logo.svg"}
+                src={"/images/header/dark-logo.png"}
                 alt="logo"
-                width={150}
+                width={180}
                 height={68}
                 unoptimized={true}
                 className={`${
@@ -74,9 +74,9 @@ const Header: React.FC = () => {
                 }`}
               />
               <Image
-                src={"/images/header/logo.svg"}
+                src={"/images/header/logo.png"}
                 alt="logo"
-                width={150}
+                width={180}
                 height={68}
                 unoptimized={true}
                 className={`${
@@ -127,7 +127,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 <Icon icon={"ph:phone-bold"} width={24} height={24} />
-                +1-212-456-789
+                01689797288
               </Link>
             </div>
             <div>
@@ -219,16 +219,16 @@ const Header: React.FC = () => {
               Contact
             </p>
             <Link
-              href="#"
+              href="mailto:sr.shahariar3225@gmail.com"
               className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
             >
-              hello@homely.com
+              sr.shahariar3225@gmail.com
             </Link>
             <Link
               href="#"
               className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
             >
-              +1-212-456-7890{" "}
+              01689797288
             </Link>
           </div>
         </div>
