@@ -34,16 +34,16 @@ export const ProjectData: ProjectType[] = [
     area: 120,
     images: [
       {
-        src: "/images/projects/project1/projectImage.jpg",
+        src: "/images/projects/project2/projectImage.jpg",
       },
       {
-        src: "/images/projects/project1/image-2.jpg",
+        src: "/images/projects/project2/image-2.jpg",
       },
       {
-        src: "/images/projects/project1/image-3.jpg",
+        src: "/images/projects/project2/image-3.jpg",
       },
       {
-        src: "/images/projects/project1/image-4.png",
+        src: "/images/projects/project2/image-4.jpg",
       },
     ],
   },

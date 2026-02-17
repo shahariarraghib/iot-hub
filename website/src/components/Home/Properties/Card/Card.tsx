@@ -26,7 +26,7 @@ const PropertyCard: React.FC<{ item: ProjectType }> = ({ item }) => {
             )}
           </div>
           <Link href={`/projects/${slug}`}>
-            <div className="absolute top-6 right-6 p-4 bg-white rounded-full hidden group-hover:block">
+            <div className="absolute top-6 right-6 p-4 bg-primary rounded-full hidden group-hover:block">
               <Icon
                 icon={"solar:arrow-right-linear"}
                 width={24}
