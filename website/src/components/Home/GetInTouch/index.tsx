@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const GetInTouch: React.FC = () => {
@@ -6,20 +5,21 @@ const GetInTouch: React.FC = () => {
     <section>
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         <div className="relative rounded-t-2xl overflow-hidden">
-          <Image
-            width={680}
-            height={386}
-            unoptimized={true}
-            src="/images/contactUs/.gif"
-            alt="Get in touch background"
+          <video
             className="w-full absolute top-0 left-0 object-cover -z-10"
-          />
-          {/* <div className="absolute top-0 h-full w-full bg-black/50"></div> */}
+            autoPlay
+            loop
+            muted
+            aria-label="Video background showing luxurious real estate"
+          >
+            <source src="/images/contactUs/GetInTouch.mp4" type="video/mp4" />
+          </video>
+
           <div className="bg-black/30 lg:py-64 md:py-28 py-10">
             <div className="flex flex-col items-center gap-8">
               <h2 className="text-white lg:text-52 md:text-40 text-3xl max-w-3/4 text-center font-medium">
-                Enter a realm where exquisite design and timeless luxury come
-                together.
+                We deliver IoT, Software, and Robotics solutions for your next
+                project.
               </h2>
               <Link
                 href="#"
@@ -33,16 +33,17 @@ const GetInTouch: React.FC = () => {
         <div className="w-full py-5 bg-primary rounded-b-2xl overflow-hidden">
           <div className="flex items-center gap-40 animate-slide">
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              GET A FREE PROPERTY VALUATION—SELL YOUR HOME WITH CONFIDENCE!
+              IoT Projects — Smart devices, smarter decisions{" "}
             </p>
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              BROWSE THOUSANDS OF LISTINGS IN PRIME LOCATIONS AT GREAT PRICES!
+              Custom Software Development — Web, Mobile & Cloud
+            </p>
+
+            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
+              Robotics — Automation for industries & research
             </p>
             <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              GET A FREE PROPERTY VALUATION—SELL YOUR HOME WITH CONFIDENCE!
-            </p>
-            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
-              BROWSE THOUSANDS OF LISTINGS IN PRIME LOCATIONS AT GREAT PRICES!
+              Need a project done? Get in touch with us today!
             </p>
           </div>
         </div>

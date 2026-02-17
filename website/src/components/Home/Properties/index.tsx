@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import PropertyCard from "./Card/Card";
-import { propertyHomes } from "@/app/api/propertyhomes";
+import { ProjectData } from "@/app/api/ProjectData";
 
 const Properties: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ const Properties: React.FC = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-          {propertyHomes.slice(0, 6).map((item, index) => (
+          {ProjectData.slice(0, 6).map((item, index) => (
             <div key={index} className="">
               <PropertyCard item={item} />
             </div>
