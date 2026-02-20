@@ -24,7 +24,8 @@ const Properties: React.FC = () => {
             Explore the most in-demand iot projects
           </h2>
           <p className="text-xm font-normal text-black/50 dark:text-white/50 text-center">
-            Curated homes where elegance, style, and comfort unite.
+            Have a project in mind? Let’s bring your ideas to life — contact us
+            today.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">

@@ -5,72 +5,46 @@ import Link from "next/link";
 
 const PropertyCard: React.FC<{ item: ProjectType }> = ({ item }) => {
   const { name, location, beds, baths, area, slug, images } = item;
-
   const mainImage = images[0]?.src;
 
   return (
-    <div>
-      <div className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20">
-        <div className="overflow-hidden rounded-t-2xl">
-          <div>
-            {" "}
-            {mainImage && (
-              <Image
-                src={mainImage}
-                alt={name}
-                width={440}
-                height={300}
-                className=" rounded-t-2xl group-hover:brightness-50 group-hover:scale-125 transition duration-300 delay-75"
-                unoptimized={true}
-              />
-            )}
-          </div>
+    <div className="h-full">
+      <div className="relative flex flex-col h-full rounded-2xl border border-dark/10 dark:border-white/10 group overflow-hidden hover:shadow-3xl duration-300 dark:hover:shadow-white/20">
+        
+        {/* IMAGE WRAPPER */}
+        <div className="relative w-full aspect-[4/3] overflow-hidden">
+          {mainImage && (
+            <Image
+              src={mainImage}
+              alt={name}
+              fill
+              className=" transition duration-500 group-hover:scale-110 group-hover:brightness-75"
+              unoptimized
+            />
+          )}
+
+          {/* ARROW */}
           <Link href={`/projects/${slug}`}>
-            <div className="absolute top-6 right-6 p-4 bg-primary rounded-full hidden group-hover:block">
+            <div className="absolute top-4 right-4 p-3 bg-primary rounded-full opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition duration-300">
               <Icon
                 icon={"solar:arrow-right-linear"}
-                width={24}
-                height={24}
+                width={20}
+                height={20}
                 className="text-black"
               />
             </div>
           </Link>
         </div>
-        <div className="p-6">
-          <div className="flex flex-col mobile:flex-row gap-5 mobile:gap-0 justify-between mb-6">
-            <div>
-              <Link href={`/projects/${slug}`}>
-                <h3 className="text-[1rem] font-medium text-black dark:text-white duration-300 group-hover:text-primary">
-                  {name}
-                </h3>
-              </Link>
-            </div>
-          </div>
-          {/* <div className="flex">
-            <div className="flex flex-col gap-2 border-e border-black/10 dark:border-white/20 pr-2 xs:pr-4 mobile:pr-8">
-              <Icon icon={"solar:bed-linear"} width={20} height={20} />
-              <p className="text-sm mobile:text-base font-normal text-black dark:text-white">
-                {beds} Bedrooms
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 border-e border-black/10 dark:border-white/20 px-2 xs:px-4 mobile:px-8">
-              <Icon icon={"solar:bath-linear"} width={20} height={20} />
-              <p className="text-sm mobile:text-base font-normal text-black dark:text-white">
-                {baths} Bathrooms
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 pl-2 xs:pl-4 mobile:pl-8">
-              <Icon
-                icon={"lineicons:arrow-all-direction"}
-                width={20}
-                height={20}
-              />
-              <p className="text-sm mobile:text-base font-normal text-black dark:text-white">
-                {area}m<sup>2</sup>
-              </p>
-            </div>
-          </div> */}
+
+        {/* CONTENT */}
+        <div className="p-5 flex flex-col flex-grow justify-between">
+          <Link href={`/projects/${slug}`}>
+            <h3 className="text-base font-medium text-black dark:text-white duration-300 group-hover:text-primary">
+              {name}
+            </h3>
+          </Link>
         </div>
+
       </div>
     </div>
   );
