@@ -117,13 +117,13 @@ const Header: React.FC = () => {
             </button>
             <div className={`hidden md:block`}>
               <Link
-                href="#"
+               href="https://wa.me/+8801689797288 " target="_blank"
                 className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${
                   isHomepage
                     ? sticky
-                      ? "text-dark dark:text-white hover:text-primary border-dark dark:border-white"
-                      : "text-white hover:text-primary"
-                    : "text-dark hover:text-primary"
+                      ? "text-dark dark:text-white  border-dark dark:border-white"
+                      : "text-white "
+                    : "text-dark "
                 }`}
               >
                 <Icon icon={"ph:phone-bold"} width={24} height={24} />

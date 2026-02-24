@@ -92,10 +92,10 @@ export default function Details() {
             </div>
             <div className="py-8 mt-8 border-t border-dark/5 dark:border-white/15">
               <h3 className="text-xl font-medium">What IOT-HUB offers</h3>
-              <div className="grid grid-cols-3 mt-5 gap-6">
-                <div className="flex items-center gap-2.5">
+              <div className="grid grid-cols-3 mt-5 gap-6 ">
+                <div className="flex items-center gap-2.5 ">
                   <Icon
-                    icon="ph:aperture"
+                    icon="mdi:puzzle-outline"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
@@ -106,7 +106,7 @@ export default function Details() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Icon
-                    icon="ph:chart-pie-slice"
+                    icon="mdi:clipboard-outline"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
@@ -117,7 +117,7 @@ export default function Details() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Icon
-                    icon="ph:television-simple"
+                    icon="boxicons:circuit-board"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
@@ -128,7 +128,7 @@ export default function Details() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Icon
-                    icon="ph:sun"
+                    icon="mdi:workflow-outline"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
@@ -139,7 +139,7 @@ export default function Details() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Icon
-                    icon="ph:video-camera"
+                    icon="cbi:outdoor-motion-sensor-temperature"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
@@ -150,7 +150,7 @@ export default function Details() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Icon
-                    icon="ph:cloud"
+                    icon="streamline-sharp:cloud-wifi"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
@@ -161,7 +161,7 @@ export default function Details() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Icon
-                    icon="ph:cloud"
+                    icon="icon-park-outline:code"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
@@ -172,7 +172,7 @@ export default function Details() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Icon
-                    icon="ph:cloud"
+                    icon="material-symbols:rocket-outline"
                     width={24}
                     height={24}
                     className="text-dark dark:text-white"
