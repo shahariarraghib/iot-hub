@@ -112,7 +112,7 @@ export default function Details() {
                     className="text-dark dark:text-white"
                   />
                   <p className="text-base dark:text-white text-dark">
-                    End-to-End IoT Solution
+                    Professional Project Documentation
                   </p>
                 </div>
                 <div className="flex items-center gap-2.5">
@@ -123,7 +123,7 @@ export default function Details() {
                     className="text-dark dark:text-white"
                   />
                   <p className="text-base dark:text-white text-dark">
-                    Energy Efficiency
+                    Circuit and System Design
                   </p>
                 </div>
                 <div className="flex items-center gap-2.5">
@@ -134,7 +134,7 @@ export default function Details() {
                     className="text-dark dark:text-white"
                   />
                   <p className="text-base dark:text-white text-dark">
-                    Natural Light
+                    Flowchart and Architecture
                   </p>
                 </div>
                 <div className="flex items-center gap-2.5">
@@ -145,7 +145,7 @@ export default function Details() {
                     className="text-dark dark:text-white"
                   />
                   <p className="text-base dark:text-white text-dark">
-                    Security Systems
+                    Sensor and Module Integration
                   </p>
                 </div>
                 <div className="flex items-center gap-2.5">
@@ -156,7 +156,29 @@ export default function Details() {
                     className="text-dark dark:text-white"
                   />
                   <p className="text-base dark:text-white text-dark">
-                    Outdoor Spaces
+                    Cloud-Based Monitoring
+                  </p>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Icon
+                    icon="ph:cloud"
+                    width={24}
+                    height={24}
+                    className="text-dark dark:text-white"
+                  />
+                  <p className="text-base dark:text-white text-dark">
+                    Source Code with Explanation
+                  </p>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <Icon
+                    icon="ph:cloud"
+                    width={24}
+                    height={24}
+                    className="text-dark dark:text-white"
+                  />
+                  <p className="text-base dark:text-white text-dark">
+                    Deployment Guide
                   </p>
                 </div>
               </div>
