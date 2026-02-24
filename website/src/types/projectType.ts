@@ -1,9 +1,8 @@
 export type ProjectType = {
   name: string;
   slug: string;
-  location: string;
-  // rate: string
-  beds: number;
+  details: string;
+  primaryObjectives: string[];
   baths: number;
   area: number;
   images: projectImage[];

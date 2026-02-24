@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PropertyCard: React.FC<{ item: ProjectType }> = ({ item }) => {
-  const { name, location, beds, baths, area, slug, images } = item;
+  const { name, details, beds, baths, area, slug, images } = item;
   const mainImage = images[0]?.src;
 
   return (

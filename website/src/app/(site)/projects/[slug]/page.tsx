@@ -75,131 +75,23 @@ export default function Details() {
         </div>
         <div className="grid grid-cols-12 gap-8 mt-10">
           <div className="lg:col-span-8 col-span-12">
-            <h3 className="text-xl font-medium">Project details</h3>
-            <div className="py-8 my-8 border-y border-dark/10 dark:border-white/20 flex flex-col gap-8">
-              <div className="flex items-center gap-6">
-                <div>
-                  <Image
-                    src="/images/SVGs/property-details.svg"
-                    width={400}
-                    height={500}
-                    alt=""
-                    className="w-8 h-8 dark:hidden"
-                    unoptimized={true}
-                  />
-                  <Image
-                    src="/images/SVGs/property-details-white.svg"
-                    width={400}
-                    height={500}
-                    alt=""
-                    className="w-8 h-8 dark:block hidden"
-                    unoptimized={true}
-                  />
-                </div>
-                <div>
-                  <h3 className="text-dark dark:text-white text-xm">
-                    Property details
-                  </h3>
-                  <p className="text-base text-dark/50 dark:text-white/50">
-                    One of the few homes in the area with a private pool.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-6">
-                <div>
-                  <Image
-                    src="/images/SVGs/smart-home-access.svg"
-                    width={400}
-                    height={500}
-                    alt=""
-                    className="w-8 h-8 dark:hidden"
-                    unoptimized={true}
-                  />
-                  <Image
-                    src="/images/SVGs/smart-home-access-white.svg"
-                    width={400}
-                    height={500}
-                    alt=""
-                    className="w-8 h-8 dark:block hidden"
-                    unoptimized={true}
-                  />
-                </div>
-                <div>
-                  <h3 className="text-dark dark:text-white text-xm">
-                    Smart home access
-                  </h3>
-                  <p className="text-base text-dark/50 dark:text-white/50">
-                    Easily check yourself in with a modern keypad system.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-6">
-                <div>
-                  <Image
-                    src="/images/SVGs/energyefficient.svg"
-                    width={400}
-                    height={500}
-                    alt=""
-                    className="w-8 h-8 dark:hidden"
-                    unoptimized={true}
-                  />
-                  <Image
-                    src="/images/SVGs/energyefficient-white.svg"
-                    width={400}
-                    height={500}
-                    alt=""
-                    className="w-8 h-8 dark:block hidden"
-                    unoptimized={true}
-                  />
-                </div>
-                <div>
-                  <h3 className="text-dark dark:text-white text-xm">
-                    Energy efficient
-                  </h3>
-                  <p className="text-base text-dark/50 dark:text-white/50">
-                    Built in 2025 with sustainable and smart-home features.
-                  </p>
-                </div>
+            <h3 className="text-xl font-medium">Primary Objectives </h3>
+            <div className="flex items-start gap-6 mt-4">
+              <div className="flex flex-col gap-3">
+                <ul className="text-xm text-dark/60 dark:text-white/60 space-y-2 list-disc pl-10">
+                  {item?.primaryObjectives.map((objective, index) => (
+                    <li key={index}>{objective}</li>
+                  ))}
+                </ul>
               </div>
             </div>
-            <div className="flex flex-col gap-5">
-              <p className="text-dark dark:text-white text-xm ">
-                Nestled in the heart of miami, the modern luxe villa at 20 s
-                aurora ave offers a perfect blend of contemporary elegance and
-                smart-home innovation. priced at $570000, this 560 ft² residence
-                features 4 spacious bedrooms, 3 luxurious bathrooms, and
-                expansive living areas designed for comfort and style. built in
-                2025, the home boasts energy-efficient systems, abundant natural
-                light, and state-of-the-art security features. outdoor spaces
-                include two stylish bar areas, perfect for entertaining 8+
-                guests. enjoy the ultimate in modern living with premium
-                amenities and a prime location.
-              </p>
-              <p className="text-dark dark:text-white text-xm ">
-                Step inside to discover an open-concept layout that seamlessly
-                connects the kitchen, dining, and living spaces. the gourmet
-                kitchen is equipped with top-of-the-line appliances, sleek
-                cabinetry, and a large island perfect for casual dining or meal
-                prep. the sunlit living room offers floor-to-ceiling windows,
-                creating a bright and airy atmosphere while providing stunning
-                views of the outdoor space.
-              </p>
-              <p className="text-dark dark:text-white text-xm ">
-                The primary suite serves as a private retreat with a spa-like
-                ensuite bathroom and a spacious walk-in closet. each additional
-                bedroom is thoughtfully designed with comfort and style in mind,
-                offering ample space and modern finishes. the home’s three
-                bathrooms feature high-end fixtures, custom vanities, and
-                elegant tiling.
-              </p>
-              <p className="text-dark dark:text-white text-xm ">
-                Outdoor living is equally impressive, with a beautifully
-                landscaped backyard, multiple lounge areas, and two fully
-                equipped bar spaces.
+            <div className="flex flex-col gap-5 mt-6">
+              <p className="text-dark dark:text-white text-xm text-justify ">
+                {item?.details}
               </p>
             </div>
             <div className="py-8 mt-8 border-t border-dark/5 dark:border-white/15">
-              <h3 className="text-xl font-medium">What this property offers</h3>
+              <h3 className="text-xl font-medium">What IOT-HUB offers</h3>
               <div className="grid grid-cols-3 mt-5 gap-6">
                 <div className="flex items-center gap-2.5">
                   <Icon
@@ -209,7 +101,7 @@ export default function Details() {
                     className="text-dark dark:text-white"
                   />
                   <p className="text-base dark:text-white text-dark">
-                    Smart Home Integration
+                    End-to-End IoT Solution
                   </p>
                 </div>
                 <div className="flex items-center gap-2.5">
@@ -220,7 +112,7 @@ export default function Details() {
                     className="text-dark dark:text-white"
                   />
                   <p className="text-base dark:text-white text-dark">
-                    Spacious Living Areas
+                    End-to-End IoT Solution
                   </p>
                 </div>
                 <div className="flex items-center gap-2.5">
@@ -269,14 +161,6 @@ export default function Details() {
                 </div>
               </div>
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938779.7831767448!2d71.05098621661072!3d23.20271516446136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e82dd003ff749%3A0x359e803f537cea25!2sGANESH%20GLORY%2C%20Gota%2C%20Ahmedabad%2C%20Gujarat%20382481!5e0!3m2!1sen!2sin!4v1715676641521!5m2!1sen!2sin"
-              width="1114"
-              height="400"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="rounded-2xl w-full"
-            ></iframe>
           </div>
           <div className="lg:col-span-4 col-span-12">
             <div className="bg-primary/10 p-8 rounded-2xl relative z-10 overflow-hidden">
@@ -302,7 +186,7 @@ export default function Details() {
                 />
               </div>
             </div>
-            {testimonials.slice(0, 1).map((item, index) => (
+            {/* {testimonials.slice(0, 1).map((item, index) => (
               <div
                 key={index}
                 className="border p-10 rounded-2xl border-dark/10 dark:border-white/20 mt-10 flex flex-col gap-6"
@@ -335,7 +219,7 @@ export default function Details() {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
