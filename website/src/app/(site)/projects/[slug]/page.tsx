@@ -186,62 +186,13 @@ export default function Details() {
           </div>
           <div className="lg:col-span-4 col-span-12">
             <div className="bg-primary/10 p-8 rounded-2xl relative z-10 overflow-hidden">
-              {/* <h4 className='text-dark text-3xl font-medium dark:text-white'>
-                                {item?.rate}
-                            </h4> */}
-              <p className="text-sm text-dark/50 dark:text-white">
-                Discounted Price
-              </p>
               <Link
-                href="#"
+                href="/contactus"
                 className="py-4 px-8 bg-primary text-white rounded-full w-full block text-center hover:bg-dark duration-300 text-base mt-8 hover:cursor-pointer"
               >
                 Contact Us
               </Link>
-              <div className="absolute right-0 top-4 -z-[1]">
-                <Image
-                  src="/images/properties/vector.svg"
-                  width={400}
-                  height={500}
-                  alt="vector"
-                  unoptimized={true}
-                />
-              </div>
             </div>
-            {/* {testimonials.slice(0, 1).map((item, index) => (
-              <div
-                key={index}
-                className="border p-10 rounded-2xl border-dark/10 dark:border-white/20 mt-10 flex flex-col gap-6"
-              >
-                <Icon
-                  icon="ph:house-simple"
-                  width={44}
-                  height={44}
-                  className="text-primary"
-                />
-                <p className="text-xm text-dark dark:text-white">
-                  {item.review}
-                </p>
-                <div className="flex items-center gap-6">
-                  <Image
-                    src={item.image}
-                    alt={item.name}
-                    width={400}
-                    height={500}
-                    className="w-20 h-20 rounded-2xl"
-                    unoptimized={true}
-                  />
-                  <div className="">
-                    <h3 className="text-xm text-dark dark:text-white">
-                      {item.name}
-                    </h3>
-                    <h4 className="text-base text-dark/50 dark:text-white/50">
-                      {item.position}
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            ))} */}
           </div>
         </div>
       </div>
