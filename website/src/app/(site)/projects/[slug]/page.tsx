@@ -188,7 +188,7 @@ export default function Details() {
             <div className="bg-primary/10 p-8 rounded-2xl relative z-10 overflow-hidden">
               <Link
                 href="/contactus"
-                className="py-4 px-8 bg-primary text-white rounded-full w-full block text-center hover:bg-dark duration-300 text-base mt-8 hover:cursor-pointer"
+                className="py-4 px-8 bg-primary text-white rounded-full w-full block text-center hover:bg-dark duration-300 text-base  hover:cursor-pointer"
               >
                 Contact Us
               </Link>

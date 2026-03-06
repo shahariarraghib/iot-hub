@@ -29,6 +29,7 @@ export const ProjectData: ProjectType[] = [
       },
     ],
   },
+  
   {
     name: "IoT Enabled Livestock Monitoring And Management System",
     slug: "2",
