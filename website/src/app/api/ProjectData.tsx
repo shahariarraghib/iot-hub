@@ -29,15 +29,16 @@ export const ProjectData: ProjectType[] = [
       },
     ],
   },
-  
+
   {
     name: "IoT Enabled Livestock Monitoring And Management System",
     slug: "2",
-    details: "15 s aurora ave, miami",
+    details:
+      "The intention of this research is to establish a platform or livestock monitoring and management system. The  IOT  framework  provides  IOT  solutions  in  a  wide range  of  domains and applications in  farming,  livestock, and agricultural front.  The technology stack  is based  on the  Internet  of  Things  (IOT)  with  relevant  sensors available to  determine the dairy monitoring system to be placed on the  animal. This document provides Use Cases (UC) of the domain, and performs evaluations in different conditions  which  are  close  to  real-time  scenarios  and operational  ones.  With  the  IOT  stack,  with  appropriate sensors  for  determining geographical  boundaries, assets, interoperability,  re-usability  and  functionality,  the technical  use-case  is  described  in  terms  of entity/informational  model,  deployment  view,  functional view, business process hierarchy. This document provides detailed analysis of the flow of data and its interactions.",
     primaryObjectives: [
-      "In order to maximize solar energy output from the Sun.",
-      "Using Hysteresis technique systems to prevent rapid switching between states near a boundary or threshold.",
-      "To design a real-time temperature, current, voltage and sun lux monitoring and remote-control capabilities, encouraging a smart and responsive solar energy system.",
+      "Easy tracking of grazing animals to identify their grazing patterns and prevent loss.",
+      "Keen monitoring of the health and vitality of livestock, enabling farmers to quickly treat animals and prevent the spread of illness or disease in real-time.",
+      "TPreventing the loss of new calves and optimizing breeding practices while monitoring the readiness for mating.",
     ],
     baths: 3,
     area: 120,

@@ -48,10 +48,10 @@ const Categories = () => {
           </div>
           <div className="lg:col-span-6 col-span-12">
             <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/residential-homes">
+              <Link href="/iot-projects">
                 <Image
                   src="/images/categories/The Internet of Things (IoT).jpg"
-                  alt="villas"
+                  alt="iot"
                   width={680}
                   height={386}
                   className="w-full"
@@ -59,7 +59,7 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/residential-homes"
+                href="/iot-projects"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end mt-6 mr-6">
@@ -82,10 +82,10 @@ const Categories = () => {
           </div>
           <div className="lg:col-span-6 col-span-12">
             <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/luxury-villa">
+              <Link href="/software-Projects">
                 <Image
                   src="/images/categories/software Projects.jpg"
-                  alt="villas"
+                  alt="software"
                   width={680}
                   height={386}
                   className="w-full"
@@ -93,7 +93,7 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/luxury-villa"
+                href="/software-Projects"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end mt-6 mr-6">

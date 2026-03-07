@@ -1,7 +1,7 @@
 import PropertyCard from "@/components/Home/Properties/Card/Card";
 import { ProjectData } from "@/app/api/ProjectData";
 
-const LuxuryVillas: React.FC = () => {
+const SoftwareProjects: React.FC = () => {
   return (
     <section className="pt-0!">
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
@@ -17,4 +17,4 @@ const LuxuryVillas: React.FC = () => {
   );
 };
 
-export default LuxuryVillas;
+export default SoftwareProjects;
