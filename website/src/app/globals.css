@@ -13,7 +13,8 @@
   /* Shadow */
   --shadow-3xl: 0px 4px 6px -2px #0000000d, 0px 10px 15px -3px #0000001a;
   --shadow-auth: 0 20px 25px -5px #0000001a;
-  --shadow-dark-auth: rgba(255, 255, 255, 0.1) 0px 12px 28px 0px,
+  --shadow-dark-auth:
+    rgba(255, 255, 255, 0.1) 0px 12px 28px 0px,
     rgba(255, 255, 255, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 
@@ -239,4 +240,42 @@ section {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.linkHoverStyle {
+  border-bottom: 2px solid #f3f3f3;
+  font-size: 1em;
+  transition: all 0.25s linear;
+  position: relative;
+  width: 6px !important;
+}
+
+.linkHoverStyle:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6b35;
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* this is to match where the border is */
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s linear;
+  /*   will-change: transform; */
+}
+
+.linkHoverStyle:hover:before {
+  transform: scale(1);
+}
+
+.bggradientcustomyellow {
+  background-image: linear-gradient(
+    119deg,
+    #ffffff,
+    #ff6b35 10.5%,
+    #ff6b35 85.29%,
+    #ffffff
+  );
+
 }

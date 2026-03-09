@@ -40,7 +40,7 @@ const Categories = () => {
               advance iot projects
             </p>
             <Link
-              href="/properties"
+              href="/projects"
               className="py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full font-semibold mt-8 hover:bg-dark duration-300"
             >
               View projects
@@ -113,10 +113,10 @@ const Categories = () => {
           </div>
           <div className="lg:col-span-3 col-span-6">
             <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/appartment">
+              <Link href="/robotics">
                 <Image
                   src="/images/categories/Robotics.jpg"
-                  alt="villas"
+                  alt="robotics"
                   width={320}
                   height={386}
                   className="w-full"
@@ -124,7 +124,7 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/appartment"
+                href="/robotics"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end mt-6 mr-6">
@@ -144,10 +144,10 @@ const Categories = () => {
           </div>
           <div className="lg:col-span-3 col-span-6">
             <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/office-spaces">
+              <Link href="/embedded-systems">
                 <Image
                   src="/images/categories/Embedded Systems.jpg"
-                  alt="office"
+                  alt="Embedded Systems"
                   width={320}
                   height={386}
                   className="w-full"
@@ -155,7 +155,7 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/office-spaces"
+                href="/embedded-systems"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between pl-10 pb-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end mt-6 mr-6">

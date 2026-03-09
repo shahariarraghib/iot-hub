@@ -3,7 +3,7 @@ import SoftwareProjects from "@/components/Properties/SoftwareProjects";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "software Projects | software development projects | software solutions | software applications",
+  title: "software Projects | IOT HUB",
 };
 
 const page = () => {

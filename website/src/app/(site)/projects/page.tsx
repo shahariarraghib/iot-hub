@@ -1,22 +1,22 @@
 import HeroSub from "@/components/shared/HeroSub";
-import PropertiesListing from "@/components/Properties/PropertyList";
+import ProjectsList from "@/components/Properties/ProjectsList";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-    title: "Property List | Homely",
+  title: "Projects | IOT HUB",
 };
 
 const page = () => {
-    return (
-        <>
-            <HeroSub
-                title="Discover inspiring designed homes."
-                description="Experience elegance and comfort with our exclusive luxury  villas, designed for sophisticated living."
-                badge="Properties"
-            />
-            <PropertiesListing />
-        </>
-    );
+  return (
+    <>
+      <HeroSub
+        title="Projects."
+        description="Explore the most in-demand areas of IoT innovation."
+        badge="Projects"
+      />
+      <ProjectsList />
+    </>
+  );
 };
 
 export default page;

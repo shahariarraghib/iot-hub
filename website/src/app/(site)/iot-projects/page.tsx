@@ -3,7 +3,7 @@ import IotProjectsList from "@/components/Properties/IotProjects";
 import React from "react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "IOT Projects | IOT ",
+  title: "IOT Projects | IOT HUB",
 };
 
 const page = () => {

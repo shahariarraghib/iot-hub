@@ -1,7 +1,7 @@
 import PropertyCard from "@/components/Home/Properties/Card/Card";
 import { ProjectData } from "@/app/api/ProjectData";
 
-const Appartment: React.FC = () => {
+const Robotics: React.FC = () => {
   return (
     <section className="pt-0!">
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
@@ -17,4 +17,4 @@ const Appartment: React.FC = () => {
   );
 };
 
-export default Appartment;
+export default Robotics;
