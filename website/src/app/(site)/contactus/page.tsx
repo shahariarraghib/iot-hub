@@ -41,16 +41,16 @@ export default function ContactUs() {
                 Get a project? Let’s talk.{" "}
                 <Link
                   href="mailto:sr.shahariar3225@gmail.com"
-                  aria-label="social-link"
+                  aria-label="Email us at sr.shahariar3225@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className=" linkHoverStyle dark:hidden bggradientcustomyellow"
+                  className=" linkHoverStyle dark:hidden bggradientcustomyellow "
                 >
                   <span>@ sr.shahariar3225@gmail.com</span>
                 </Link>
                 <Link
                   href="mailto:sr.shahariar3225@gmail.com"
-                  aria-label="social-link"
+                  aria-label="Email us at sr.shahariar3225@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="linkHoverStyle hidden dark:inline"
@@ -62,7 +62,7 @@ export default function ContactUs() {
                 Get In Touch, I Want To Hear From You. send me an email
                 <Link
                   href="mailto:sr.shahariar3225@gmail.com"
-                  aria-label="social-link"
+                  aria-label="Email sr.shahariar3225@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="linkHoverStyle ml-2 mr-2 dark:hidden bggradientcustomyellow"
@@ -71,7 +71,7 @@ export default function ContactUs() {
                 </Link>
                 <Link
                   href="mailto:sr.shahariar3225@gmail.com"
-                  aria-label="social-link"
+                  aria-label="Email sr.shahariar3225@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className=" linkHoverStyle ml-2 mr-2 hidden dark:inline"
@@ -80,8 +80,8 @@ export default function ContactUs() {
                 </Link>
                 or whatsapp me <br />
                 <Link
-                  href="https://wa.me/01689797288"
-                  aria-label="social-link"
+                  href="https://wa.me/8801689797288"
+                  aria-label="WhatsApp us at +880 1689797288"
                   target="_blank"
                   rel="noopener noreferrer"
                   className=" linkHoverStyle ml-2 mr-2 dark:hidden bggradientcustomyellow"
@@ -89,8 +89,8 @@ export default function ContactUs() {
                   (+880) 1689797288
                 </Link>
                 <a
-                  href="https://wa.me/01689797288"
-                  aria-label="social-link"
+                  href="https://wa.me/8801689797288"
+                  aria-label="WhatsApp us at +880 1689797288"
                   target="_blank"
                   rel="noopener noreferrer"
                   className=" linkHoverStyle ml-2 mr-2 hidden dark:inline"

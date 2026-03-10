@@ -10,7 +10,9 @@ const GetInTouch: React.FC = () => {
             autoPlay
             loop
             muted
-            aria-label="Video background showing luxurious real estate"
+            playsInline
+            preload="metadata"
+            aria-label="Video background showing IoT and technology solutions"
           >
             <source src="/images/contactUs/GetInTouch.mp4" type="video/mp4" />
           </video>
@@ -22,8 +24,8 @@ const GetInTouch: React.FC = () => {
                 project.
               </h2>
               <Link
-                href="#"
-                className="bg-white py-4 px-8 rounded-full text-dark hover:bg-dark hover:text-white duration-300"
+                href="/contactus"
+                className="bg-primary py-4 px-8 rounded-full text-dark hover:bg-dark hover:text-white duration-300"
               >
                 Get In Touch
               </Link>
@@ -31,18 +33,18 @@ const GetInTouch: React.FC = () => {
           </div>
         </div>
         <div className="w-full py-5 bg-primary rounded-b-2xl overflow-hidden">
-          <div className="flex items-center gap-40 animate-slide">
-            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
+          <div className="flex items-center gap-40 animate-slide ">
+            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px dark:after:bg-black after:bg-white after:top-3 after:-right-32 dark:text-black">
               IoT Projects — Smart devices, smarter decisions{" "}
             </p>
-            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
+            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px dark:after:bg-black after:bg-white after:top-3 after:-right-32 dark:text-black">
               Custom Software Development — Web, Mobile & Cloud
             </p>
 
-            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
+            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px dark:after:bg-black after:bg-white after:top-3 after:-right-32 dark:text-black">
               Robotics — Automation for industries & research
             </p>
-            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px after:bg-white after:top-3 after:-right-32">
+            <p className="text-white whitespace-nowrap relative after:absolute after:w-20 after:h-px dark:after:bg-black after:bg-white after:top-3 after:-right-32 dark:text-black">
               Need a project done? Get in touch with us today!
             </p>
           </div>

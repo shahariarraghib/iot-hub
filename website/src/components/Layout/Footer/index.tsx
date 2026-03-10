@@ -9,10 +9,10 @@ const Footer = () => {
       <div className="container mx-auto max-w-8xl pt-14 px-4 sm:px-6 lg:px-0">
         <div className="flex lg:items-center justify-between items-end lg:gap-11 pb-14 border-b border-white/10 lg:flex-nowrap flex-wrap gap-6">
           <div>
-            <Link href="/">
+            <Link href="/" aria-label="IOT-HUB home">
               <Image
                 src={"/images/header/logo.png"}
-                alt="logo"
+                alt="IOT-HUB logo"
                 width={180}
                 height={68}
                 unoptimized={true}
@@ -22,32 +22,14 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link href="https://wa.me/+8801689797288 " target="_blank">
-              <Icon
-                icon="ic:baseline-whatsapp"
-                width={28}
-                height={28}
-                className="text-white hover:text-primary duration-300"
-              />
+            <Link href="https://wa.me/+8801689797288" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <Icon icon="ic:baseline-whatsapp" width={28} height={28} className="text-white hover:text-primary duration-300" aria-hidden="true" />
             </Link>
-            <Link
-              href="https://www.facebook.com/shahariar.raghib/"
-              target="_blank"
-            >
-              <Icon
-                icon="ph:facebook-logo-bold"
-                width={28}
-                height={28}
-                className="text-white hover:text-primary duration-300"
-              />
+            <Link href="https://www.facebook.com/shahariar.raghib/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <Icon icon="ph:facebook-logo-bold" width={28} height={28} className="text-white hover:text-primary duration-300" aria-hidden="true" />
             </Link>
-            <Link href="#">
-              <Icon
-                icon="ph:instagram-logo-bold"
-                width={28}
-                height={28}
-                className="text-white hover:text-primary duration-300"
-              />
+            <Link href="#" aria-label="Instagram (link not yet available)">
+              <Icon icon="ph:instagram-logo-bold" width={28} height={28} className="text-white hover:text-primary duration-300" aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -55,11 +37,12 @@ const Footer = () => {
           <div className="grid grid-cols-12 sm:gap-10 gap-y-6">
             <div className="md:col-span-7 col-span-12">
               <h2 className="text-white leading-[1.2] text-40 font-medium mb-6 lg:max-w-3/4">
-                We deliver IoT, Software, and Robotics solutions for your next project.
+                We deliver IoT, Software, and Robotics solutions for your next
+                project.
               </h2>
               <Link
                 href="/contactus"
-                className="bg-primary text-base font-semibold py-4 px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer"
+                className="bg-primary text-base font-semibold py-4 px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer dark:text-black "
               >
                 Get In Touch
               </Link>
@@ -100,7 +83,8 @@ const Footer = () => {
             <Link
               href="https://shahariar-bhuiyan.vercel.app/"
               className="hover:text-primary"
-              target="_blanck"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Shahariar Bhuiyan
             </Link>

@@ -48,6 +48,7 @@ const Header: React.FC = () => {
       }`}
     >
       <nav
+        aria-label="Main navigation"
         className={`container mx-auto max-w-8xl flex items-center justify-between py-4 duration-300 ${
           sticky
             ? "shadow-lg bg-[#FF6B35] dark:bg-dark rounded-full top-5 px-4 "
@@ -56,13 +57,14 @@ const Header: React.FC = () => {
       >
         <div className="flex justify-between items-center gap-2 w-full">
           <div>
-            <Link href="/">
+            <Link href="/" aria-label="IOT-HUB home">
               <Image
                 src={"/images/header/dark-logo.png"}
-                alt="logo"
+                alt="IOT-HUB logo dark"
                 width={180}
                 height={68}
                 unoptimized={true}
+                priority
                 className={`${
                   isHomepage
                     ? sticky
@@ -75,10 +77,11 @@ const Header: React.FC = () => {
               />
               <Image
                 src={"/images/header/logo.png"}
-                alt="logo"
+                alt="IOT-HUB logo"
                 width={180}
                 height={68}
                 unoptimized={true}
+                priority
                 className={`${
                   isHomepage
                     ? sticky
@@ -93,8 +96,10 @@ const Header: React.FC = () => {
           </div>
           <div className="flex items-center gap-2 sm:gap-6">
             <button
+              type="button"
               className="hover:cursor-pointer"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+              aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             >
               <Icon
                 icon={"solar:sun-bold"}
@@ -117,7 +122,8 @@ const Header: React.FC = () => {
             </button>
             <div className={`hidden md:block`}>
               <Link
-               href="https://wa.me/+8801689797288 " target="_blank"
+               href="https://wa.me/+8801689797288" target="_blank" rel="noopener noreferrer"
+               aria-label="Contact us on WhatsApp: 01689797288"
                 className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${
                   isHomepage
                     ? sticky
@@ -132,6 +138,7 @@ const Header: React.FC = () => {
             </div>
             <div>
               <button
+                type="button"
                 onClick={() => setNavbarOpen(!navbarOpen)}
                 className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${
                   isHomepage
@@ -166,6 +173,7 @@ const Header: React.FC = () => {
           <div className="">
             <div className="flex items-center justify-start py-10">
               <button
+                type="button"
                 onClick={() => setNavbarOpen(false)}
                 aria-label="Close mobile menu"
                 className="bg-white p-3 rounded-full hover:cursor-pointer"
@@ -175,6 +183,7 @@ const Header: React.FC = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
+                  aria-hidden="true"
                 >
                   <path
                     fill="none"
@@ -208,12 +217,16 @@ const Header: React.FC = () => {
             <Link
               href="mailto:sr.shahariar3225@gmail.com"
               className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
+              aria-label="Email us at sr.shahariar3225@gmail.com"
             >
               sr.shahariar3225@gmail.com
             </Link>
             <Link
-              href="#"
+              href="https://wa.me/+8801689797288"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
+              aria-label="Contact us on WhatsApp: 01689797288"
             >
               01689797288
             </Link>

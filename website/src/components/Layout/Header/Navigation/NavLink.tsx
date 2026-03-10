@@ -29,10 +29,17 @@ const NavLink: React.FC<NavLinkProps> = ({ item, onClick }) => {
     }
   )
 
+  const isCurrentPage = item.href === path || path.startsWith(itemLabelToPath);
+
   return (
     <li className='flex items-center group w-fit'>
       <div className={liststyle} />
-      <Link href={item.href} className={linkclasses} onClick={onClick}>
+      <Link
+        href={item.href}
+        className={linkclasses}
+        onClick={onClick}
+        aria-current={isCurrentPage ? 'page' : undefined}
+      >
         {item.label}
       </Link>
     </li>

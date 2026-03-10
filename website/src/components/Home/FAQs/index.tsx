@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
           <div className="lg:mx-0 mx-auto">
             <Image
               src="/images/faqs/faqsImage.jpg"
-              alt="image"
+              alt="Team discussing IoT, Software and Robotics solutions"
               width={680}
               height={644}
               className="lg:w-full max-h-[660px] rounded-2xl"

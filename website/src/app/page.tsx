@@ -8,7 +8,7 @@ import FAQ from "@/components/Home/FAQs";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <Services />
       <Properties />
@@ -16,6 +16,6 @@ export default function Home() {
       <BlogSmall />
       <GetInTouch />
       <FAQ />
-    </main>
+    </>
   );
 }

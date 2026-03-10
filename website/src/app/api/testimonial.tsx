@@ -1,16 +1,18 @@
-import { Testimonial } from "@/types/testimonial"
+import { Testimonial } from "@/types/testimonial";
 
 export const testimonials: Testimonial[] = [
-    {
-        image: '/images/testimonial/smiths.jpg',
-        name: 'Emily & John Smith',
-        review: 'I found my ideal home in no time! The listings were detailed, the photos were accurate, and the whole process felt seamless. Customer service was top-notch, answering all my questions. I will definitely use this platform again in the future!',
-        position: 'Buyer'
-    },
-    {
-        image: '/images/testimonial/johns.jpg',
-        name: 'Sam & Mickay John',
-        review: 'I quickly found my dream home! The listings were thorough, the photos were spot-on, and the entire process was smooth. The customer service was outstanding, addressing all my questions with ease. I’ll definitely use this platform again!',
-        position: 'Buyer'
-    },
-]
+  {
+    image: "/images/testimonial/ornob.png",
+    name: "Ornob",
+    review:
+      "IoT Hub provided an excellent platform for learning and building smart IoT solutions. The resources and projects are very helpful for developers.",
+    position: "Buyer",
+  },
+  {
+    image: "/images/testimonial/anika.png",
+    name: "Anika Rahman ",
+    review:
+      "Thanks to IoT Hub, I was able to understand how connected devices work and build my first IoT project successfully.",
+    position: "Buyer",
+  },
+];

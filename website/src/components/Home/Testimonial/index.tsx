@@ -37,10 +37,11 @@ const Testimonial = () => {
       <div className="absolute right-0">
         <Image
           src="/images/testimonial/Vector.png"
-          alt="victor"
+          alt=""
           width={700}
           height={1039}
           unoptimized={true}
+          aria-hidden="true"
         />
       </div>
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">

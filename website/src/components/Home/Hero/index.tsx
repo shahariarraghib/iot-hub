@@ -8,9 +8,11 @@ const Hero: React.FC = () => {
         loop
         muted
         playsInline
+        preload="metadata"
         width="100%"
         height="100%"
-        className="!h-[100%] object-cover "
+        className="!h-[100%] object-cover"
+        aria-label="Background video showing IoT and technology innovation"
       >
         <source src="/images/hero/banner.mp4" type="video/mp4" />
       </video>
@@ -34,7 +36,7 @@ const Hero: React.FC = () => {
           </p>
           <Link
             href="/contactus"
-            className="mt-4 flex w-fit items-center gap-x-2  rounded bg-primary px-6 py-3 text-lg font-medium text-white shadow-signUp"
+            className="mt-4 flex w-fit items-center gap-x-2  rounded bg-primary px-6 py-3 text-lg font-medium text-white shadow-signUp dark:text-black"
           >
             <span>Contact Us</span>
           </Link>
