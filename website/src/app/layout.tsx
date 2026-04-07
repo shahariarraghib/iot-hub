@@ -6,6 +6,7 @@ import Footer from "@/components/Layout/Footer";
 import { ThemeProvider } from "next-themes";
 import SessionProviderComp from "@/components/nextauth/SessionProvider";
 import ScrollToTop from "@/components/shared/ScrollUp/ScrollUp";
+import { Analytics } from "@vercel/analytics/next";
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
             <ScrollToTop />
           </ThemeProvider>
         </SessionProviderComp>
+        <Analytics />
       </body>
     </html>
   );

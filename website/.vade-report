@@ -1,0 +1,49 @@
+# Vercel Web Analytics Implementation
+
+Successfully implemented Vercel Web Analytics for the Next.js IOT-HUB project.
+
+## Changes Made
+
+### 1. Installed Package
+- Added `@vercel/analytics` package to dependencies
+- Used npm to install the package as the project uses package-lock.json
+
+### 2. Modified Files
+
+**src/app/layout.tsx**
+- Added import statement: `import { Analytics } from "@vercel/analytics/next"`
+- Added `<Analytics />` component inside the `<body>` tag, after the SessionProviderComp closing tag
+- The component is properly placed to track all page views across the application
+
+**package.json**
+- Added `@vercel/analytics` to dependencies
+
+**package-lock.json**
+- Updated with @vercel/analytics and its dependencies
+
+## Implementation Details
+
+This is an App Router Next.js project (using `src/app` directory structure), so the Analytics component was added to the root layout file (`src/app/layout.tsx`).
+
+The `<Analytics />` component is placed:
+- Inside the `<body>` tag for proper script injection
+- After all other provider components to ensure proper initialization
+- At the root level to track all routes in the application
+
+## Testing Results
+
+â **Build Test**: Build completed successfully with no errors
+- Command: `npm run build`
+- Result: Production build created successfully
+- All static pages generated without issues
+
+â **Linter Test**: No new linting errors introduced
+- Command: `npm run lint`
+- Result: All existing warnings remain (pre-existing), no new issues from Analytics integration
+
+## Notes
+
+- The Analytics component will automatically start collecting page view data when deployed to Vercel
+- No configuration is required for basic analytics functionality
+- The component is tree-shakeable and will not affect bundle size if analytics are disabled
+- All pre-existing ESLint warnings in the codebase remain unchanged (no new warnings introduced)
